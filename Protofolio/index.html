@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Award-Winning Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=syne@400,500,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Magnetic Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Glassmorphism Navbar -->
+    <nav class="navbar glass" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo magnetic-trigger">Portfolio</a>
+            <div class="nav-right">
+                <button class="theme-toggle magnetic-trigger" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon sun">☀</span>
+                    <span class="theme-icon moon">☾</span>
+                    <span class="theme-slider"></span>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link magnetic-trigger">Home</a></li>
+                    <li><a href="#about" class="nav-link magnetic-trigger">About</a></li>
+                    <li><a href="#education" class="nav-link magnetic-trigger">Education</a></li>
+                    <li><a href="#experience" class="nav-link magnetic-trigger">Experience</a></li>
+                    <li><a href="#skills" class="nav-link magnetic-trigger">Skills</a></li>
+                    <li><a href="#projects" class="nav-link magnetic-trigger">Projects</a></li>
+                    <li><a href="#feedback" class="nav-link magnetic-trigger">Feedback</a></li>
+                    <li><a href="#services" class="nav-link magnetic-trigger">Services</a></li>
+                    <li><a href="#contact" class="nav-link magnetic-trigger">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section - Full Screen Split -->
+        <section id="home" class="hero full-height">
+            <div class="hero-split">
+                <div class="hero-left">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <h1 class="hero-name">
+                        <span class="name-line"><span class="char">A</span><span class="char">h</span><span
+                                class="char">m</span><span class="char">e</span><span class="char">d</span> <span
+                                class="char">A</span><span class="char">d</span><span class="char">e</span><span
+                                class="char">l</span></span>
+                    </h1>
+                    <p class="hero-bio"><span id="typewriter"></span><span class="cursor-blink">|</span></p>
+                    <div class="hero-cta">
+                        <a href="#" class="btn btn-primary magnetic-trigger liquid-btn">Download CV</a>
+                        <a href="#projects" class="btn btn-secondary magnetic-trigger liquid-btn">My Projects</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-blob"></div>
+                    <div class="hero-image-wrapper tilt-wrap" data-tilt data-tilt-max="8" data-tilt-speed="800">
+                        <img src="./image/WhatsApp Image 2026-01-26 at 12.15.08 AM.jpeg" alt="Professional Portrait"
+                            class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section - With Action Stats -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title" data-split>About Me</h2>
+                <div class="about-action">
+                    <div class="about-stats">
+                        <div class="stat-item glass">
+                            <span class="stat-num" data-count="15">0</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-item glass">
+                            <span class="stat-num" data-count="8">0</span>
+                            <span class="stat-label">Skills Mastered</span>
+                        </div>
+                        <div class="stat-item glass">
+                            <span class="stat-num" data-count="2">0</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                        <div class="stat-item glass">
+                            <span class="stat-num">∞</span>
+                            <span class="stat-label">Coffee Cups</span>
+                        </div>
+                    </div>
+                    <div class="about-story-wrap">
+                        <p class="about-story" data-lines>
+                            <span class="line">Second-year CS student with a passion for turning ideas into code.</span>
+                            <span class="line">Started coding in high school — now building web apps and learning every day.</span>
+                            <span class="line">Strong foundation in <strong class="gradient-text">programming</strong>, DSA, and <strong class="gradient-text">web development</strong>.</span>
+                            <span class="line">Side projects, clean code, and always ready for the next challenge. Let's build something.</span>
+                        </p>
+                        <a href="#contact" class="about-cta magnetic-trigger">Let's Connect →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section - Glowing Timeline -->
+        <section id="education" class="section education">
+            <div class="container">
+                <h2 class="section-title" data-split>Education</h2>
+                <p class="section-sub">Where it all started</p>
+                <div class="education-timeline">
+                    <div class="timeline-track">
+                        <div class="timeline-fill" id="timelineFill"></div>
+                    </div>
+                    <div class="timeline-item glass" data-timeline>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Cairo University - Faculty of Computers & AI</h3>
+                            <p class="degree">Bachelor of Science in Computer Science (2nd Year)</p>
+                            <p class="desc">Currently completing core courses: Data Structures, Algorithms, OOP,
+                                Database Systems, and Web Development. Active member of the CS Student Club.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section - Parallax -->
+        <section id="experience" class="section experience parallax-section">
+            <div class="parallax-bg" data-parallax></div>
+            <div class="container">
+                <h2 class="section-title" data-split>Experience</h2>
+                <p class="section-sub">What I've been up to</p>
+                <div class="experience-list">
+                    <div class="exp-item glass"
+                        data-exp-image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop">
+                        <h3>Data Structures Teaching Assistant</h3>
+                        <span class="company">Cairo University - CS Department</span>
+                        <p>Assisting first-year students with lab sessions. Explaining concepts like Linked Lists,
+                            Trees, and Sorting Algorithms.</p>
+                    </div>
+                    <div class="exp-item glass"
+                        data-exp-image="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop">
+                        <h3>Freelance Web Developer</h3>
+                        <span class="company">Upwork / Local Projects</span>
+                        <p>Building simple websites for small businesses. HTML, CSS, JavaScript, and responsive design.
+                        </p>
+                    </div>
+                    <div class="exp-item glass"
+                        data-exp-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop">
+                        <h3>Academic Project Lead</h3>
+                        <span class="company">University Group Projects</span>
+                        <p>Leading team projects for Database and Programming courses. Designed systems and wrote
+                            documentation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="exp-preview" id="expPreview"></div>
+        </section>
+
+        <!-- Skills Section - Tech Stack -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="skills-header">
+                    <h2 class="section-title" data-split>Tech Stack</h2>
+                    <p class="skills-sub">Crafting digital experiences with modern tools</p>
+                    <div class="skills-divider"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Frontend Development</h3>
+                        <div class="skill-card-pro glass magnetic-trigger">
+                            <div class="skill-icon-box"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <p>Semantic structure & SEO</p>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card-pro glass magnetic-trigger">
+                            <div class="skill-icon-box"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
+                                <p>Flexbox, Grid & Animations</p>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card-pro glass magnetic-trigger">
+                            <div class="skill-icon-box"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <p>ES6+, Async, DOM</p>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="skill-group">
+                        <h3 class="skill-group-title"><span class="badge">Learning</span> Backend</h3>
+                        <div class="skill-card-pro glass magnetic-trigger">
+                            <div class="skill-icon-box"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <h4>Node.js</h4>
+                                <p>Server-side logic</p>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card-pro glass magnetic-trigger">
+                            <div class="skill-icon-box"><i class="fas fa-server"></i></div>
+                            <div class="skill-info">
+                                <h4>Express.js</h4>
+                                <p>RESTful APIs & Routing</p>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Professional Tools</h3>
+                        <div class="skill-card-pro glass magnetic-trigger">
+                            <div class="skill-icon-box"><i class="fab fa-github"></i></div>
+                            <div class="skill-info">
+                                <h4>Git & GitHub</h4>
+                                <p>Version control & Collab</p>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card-pro glass magnetic-trigger">
+                            <div class="skill-icon-box"><i class="fas fa-code"></i></div>
+                            <div class="skill-info">
+                                <h4>VS Code</h4>
+                                <p>Productive workflow</p>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card-pro glass magnetic-trigger">
+                            <div class="skill-icon-box"><i class="fab fa-figma"></i></div>
+                            <div class="skill-info">
+                                <h4>Figma</h4>
+                                <p>UI/UX Design to Code</p>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-footer glass">
+                    <span class="skills-tag">Responsive Design</span>
+                    <span class="skills-tag">Chrome DevTools</span>
+                    <span class="skills-tag">REST APIs</span>
+                    <span class="skills-tag">Problem Solving</span>
+                    <span class="skills-tag">Clean Code</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section - Premium Showcase -->
+        <section id="projects" class="section projects">
+            <div class="projects-bg"></div>
+            <div class="container">
+                <div class="projects-header">
+                    <h2 class="section-title" data-split>Projects</h2>
+                    <p class="projects-sub">Ideas turned into working software</p>
+                </div>
+                <div class="projects-showcase">
+                    <!-- Featured -->
+                    <div class="project-featured glass tilt-wrap" data-tilt data-tilt-max="4" data-tilt-glare="true">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=500&fit=crop"
+                                alt="Portfolio">
+                        </div>
+                        <div class="project-content">
+                            <h3>Full Portfolio Website</h3>
+                            <p>Premium portfolio with glassmorphism, GSAP animations, Lenis smooth scroll, dark/light
+                                theme.</p>
+                            <div class="project-tools">
+                                <span>HTML5</span><span>CSS3</span><span>JS</span><span>GSAP</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="project-link magnetic-trigger">GitHub</a>
+                                <a href="#" class="project-link magnetic-trigger">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid -->
+                    <div class="projects-grid">
+                        <div class="project-card glass tilt-wrap" data-tilt data-tilt-max="5" data-tilt-glare="true">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop"
+                                    alt="Task App">
+                            </div>
+                            <div class="project-content">
+                                <h3>Task Management System</h3>
+                                <p class="project-desc">Advanced interactive dashboard with local persistence and tag
+                                    filtering.</p>
+                                <div class="project-tools"><span>JavaScript</span><span>Local
+                                        Storage</span><span>UI/UX</span></div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-trigger">Code <i
+                                            class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link magnetic-trigger">Demo <i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card glass tilt-wrap" data-tilt data-tilt-max="5" data-tilt-glare="true">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop"
+                                    alt="Weather">
+                            </div>
+                            <div class="project-content">
+                                <h3>SkyCast Weather App</h3>
+                                <p class="project-desc">Real-time weather data visualization using OpenWeather API
+                                    integration.</p>
+                                <div class="project-tools"><span>REST
+                                        API</span><span>Async/Await</span><span>Charts.js</span></div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-trigger">Code <i
+                                            class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link magnetic-trigger">Live <i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card glass tilt-wrap" data-tilt data-tilt-max="5" data-tilt-glare="true">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop"
+                                    alt="Landing">
+                            </div>
+                            <div class="project-content">
+                                <h3>EcoVibe Landing Page</h3>
+                                <p class="project-desc">Award-winning landing page design converted from Figma with
+                                    pixel perfection.</p>
+                                <div class="project-tools"><span>Figma</span><span>Flexbox</span><span>GSAP</span></div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-trigger">Code <i
+                                            class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link magnetic-trigger">Live <i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card glass tilt-wrap" data-tilt data-tilt-max="5" data-tilt-glare="true">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop"
+                                    alt="API">
+                            </div>
+                            <div class="project-content">
+                                <h3>Secure REST Gateway</h3>
+                                <p class="project-desc">Production-ready Express.js backend with JWT authentication and
+                                    data validation.</p>
+                                <div class="project-tools"><span>Node.js</span><span>Express</span><span>Security</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-trigger">Docs <i
+                                            class="fas fa-book"></i></a>
+                                    <a href="#" class="project-link magnetic-trigger">Code <i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card glass tilt-wrap" data-tilt data-tilt-max="5" data-tilt-glare="true">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=600&h=400&fit=crop"
+                                    alt="E-commerce">
+                            </div>
+                            <div class="project-content">
+                                <h3>LuxeStore Commerce</h3>
+                                <p class="project-desc">High-performance e-commerce frontend with cart logic and smooth
+                                    transitions.</p>
+                                <div class="project-tools"><span>JavaScript</span><span>CSS Grid</span><span>Anim</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-trigger">Code <i
+                                            class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link magnetic-trigger">Visit <i
+                                            class="fas fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card glass tilt-wrap" data-tilt data-tilt-max="5" data-tilt-glare="true">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
+                                    alt="Quiz">
+                            </div>
+                            <div class="project-content">
+                                <h3>MindSpark Quiz Platform</h3>
+                                <p class="project-desc">Gamified learning platform with timer, dynamic scoring, and
+                                    ranking.</p>
+                                <div class="project-tools"><span>DOM Mastery</span><span>State Mgmt</span></div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-trigger">Play Now <i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Section - Infinite Marquee -->
+        <section id="feedback" class="section feedback">
+            <div class="feedback-header">
+                <h2 class="section-title" data-split>Testimonials</h2>
+                <p class="section-sub">What others say</p>
+            </div>
+            <div class="marquee">
+                <div class="marquee-track">
+                    <div class="feedback-card glass"><img
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                            alt="">
+                        <div class="stars">★★★★★</div>
+                        <p>"One of my top students. Excellent problem-solving skills and clean code."</p><span>— Dr.
+                            Mohamed, CS Professor</span>
+                    </div>
+                    <div class="feedback-card glass"><img
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
+                            alt="">
+                        <div class="stars">★★★★★</div>
+                        <p>"Great teamwork on our Database project. Delivered on time and documented well."</p><span>—
+                            Sara, Team Member</span>
+                    </div>
+                    <div class="feedback-card glass"><img
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face"
+                            alt="">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Built a simple website for my shop. Fast and responsive. Will hire again."</p><span>—
+                            Khaled, Client</span>
+                    </div>
+                    <div class="feedback-card glass"><img
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                            alt="">
+                        <div class="stars">★★★★★</div>
+                        <p>"One of my top students. Excellent problem-solving skills and clean code."</p><span>— Dr.
+                            Mohamed, CS Professor</span>
+                    </div>
+                    <div class="feedback-card glass"><img
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
+                            alt="">
+                        <div class="stars">★★★★★</div>
+                        <p>"Great teamwork on our Database project. Delivered on time and documented well."</p><span>—
+                            Sara, Team Member</span>
+                    </div>
+                    <div class="feedback-card glass"><img
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face"
+                            alt="">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Built a simple website for my shop. Fast and responsive. Will hire again."</p><span>—
+                            Khaled, Client</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section - Accordion Cards -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2 class="section-title" data-split>Services</h2>
+                <p class="section-sub">What I offer</p>
+                <p class="section-sub">What I can do for you</p>
+                <div class="services-accordion">
+                    <div class="service-item glass" data-service>
+                        <div class="service-header">
+                            <h3>Landing Pages & Portfolios</h3>
+                            <span class="service-toggle">+</span>
+                        </div>
+                        <div class="service-body">
+                            <p>Simple, responsive websites for businesses, portfolios, or personal projects. HTML, CSS,
+                                JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="service-item glass" data-service>
+                        <div class="service-header">
+                            <h3>Small Web Applications</h3>
+                            <span class="service-toggle">+</span>
+                        </div>
+                        <div class="service-body">
+                            <p>Todo apps, calculators, quiz apps, and similar tools built with vanilla JS or basic
+                                frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="service-item glass" data-service>
+                        <div class="service-header">
+                            <h3>C++ / Programming Help</h3>
+                            <span class="service-toggle">+</span>
+                        </div>
+                        <div class="service-body">
+                            <p>Data Structures, Algorithms, and OOP assignments. Code review and debugging assistance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-item glass" data-service>
+                        <div class="service-header">
+                            <h3>Database Projects</h3>
+                            <span class="service-toggle">+</span>
+                        </div>
+                        <div class="service-body">
+                            <p>Simple database design and implementation using SQL. ER diagrams and normalization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section - Immersive -->
+        <section id="contact" class="section contact">
+            <div class="globe-bg" id="globeBg"></div>
+            <div class="container contact-container">
+                <h2 class="section-title" data-split>Let's Talk</h2>
+                <p class="section-sub">Get in touch</p>
+                <div class="contact-split">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <a href="tel:+201012345678">+20 101 234 5678</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <a href="mailto:ahmed.adel@student.cu.edu.eg">ahmed.adel@student.cu.edu.eg</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">in</span>
+                            <a href="https://linkedin.com" target="_blank"
+                                rel="noopener">linkedin.com/in/ahmedadel</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <p>Giza, Cairo, Egypt</p>
+                        </div>
+                    </div>
+                    <form class="contact-form glass" id="contactForm">
+                        <div class="input-wrap">
+                            <input type="text" name="name" id="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="email" name="email" id="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" name="subject" id="subject" placeholder=" ">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="input-wrap">
+                            <textarea name="message" id="message" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn magnetic-trigger">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-check">✓</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-marquee">
+                <div class="footer-marquee-track">
+                    <span>LET'S WORK TOGETHER</span>
+                    <span>•</span>
+                    <span>LET'S WORK TOGETHER</span>
+                    <span>•</span>
+                    <span>LET'S WORK TOGETHER</span>
+                    <span>•</span>
+                    <span>LET'S WORK TOGETHER</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Ahmed Adel. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="magnetic-trigger" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" class="magnetic-trigger" aria-label="GitHub">GitHub</a>
+                    <a href="#" class="magnetic-trigger" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.mjs"
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
