@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Adel | Full Stack Web Developer</title>
+    <meta name="description" content="Ahmed Adel - Full Stack Web Developer & Computer Science Student. Building modern web applications and scalable systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Ahmed<span>Adel</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+                <div class="shape shape-6"></div>
+                <div class="shape shape-7"></div>
+            </div>
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+            <div class="gradient-orb gradient-orb-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-title">Ahmed <span>Adel</span></h1>
+                <p class="hero-subtitle">Full Stack Web Developer</p>
+                <p class="hero-typing"><span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span></p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" id="downloadCV">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div class="hero-photo-frame">
+                        <img src="ahmed-adel.png" alt="Ahmed Adel - Full Stack Web Developer" class="hero-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-suffix">+</span>
+                    <p class="stat-label">Projects</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-suffix">+</span>
+                    <p class="stat-label">Years Learning</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-suffix">+</span>
+                    <p class="stat-label">Technologies</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">Passion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About <span>Me</span></h2>
+            <div class="about-content" data-aos="fade-up">
+                <div class="about-image">
+                    <div class="about-image-wrapper glass-card">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Ahmed Adel is a <strong>Computer Science student</strong> at Zagazig University Faculty of Computers and Information.</p>
+                    <p>He is passionate about web development and building scalable digital solutions. Ahmed has experience developing responsive user interfaces and backend systems.</p>
+                    <p>He constantly practices programming, builds projects, and participates in developer communities. His goal is to become a professional backend developer and work on large-scale web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Education & <span>Learning</span></h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Faculty of Computers and Information</h3>
+                        <p class="timeline-uni">Zagazig University</p>
+                        <p class="timeline-major">Computer Science</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Additional Learning</h3>
+                        <ul>
+                            <li>Self-learning programming</li>
+                            <li>Online developer communities</li>
+                            <li>Real project practice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card" data-aos="fade-up">
+                    <h3><i class="fas fa-palette"></i> Frontend</h3>
+                    <div class="skill-item">
+                        <span>HTML</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-aos="fade-up">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-item">
+                        <span>PHP</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Laravel (Learning)</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="60"></div></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-aos="fade-up">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-item">
+                        <span>Git</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>GitHub</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>VS Code</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-aos="fade-up">
+                    <h3><i class="fas fa-lightbulb"></i> Concepts</h3>
+                    <div class="skill-item">
+                        <span>Responsive Design</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Problem Solving</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>UI/UX Basics</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <article class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aahmedadel2006aa-cpu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://aahmedadel2006aa-cpu.github.io" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <i class="fas fa-store"></i>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Classified Ads Website</h3>
+                        <p>A marketplace website similar to Dubizzle. Categories: Cars, Jobs, Electronics, Real Estate.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aahmedadel2006aa-cpu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Frontend Website Templates</h3>
+                        <p>Multiple responsive templates built to practice UI and layout systems.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aahmedadel2006aa-cpu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card glass-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Building modern responsive websites.</p>
+                </div>
+                <div class="service-card glass-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>Creating attractive user interfaces.</p>
+                </div>
+                <div class="service-card glass-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>Developing server-side logic and APIs.</p>
+                </div>
+                <div class="service-card glass-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Website Optimization</h3>
+                    <p>Improving speed and performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card glass-card active">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Ahmed is a dedicated developer who constantly improves his skills."</p>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Great passion for programming and modern web technologies."</p>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In <span>Touch</span></h2>
+            <div class="contact-content">
+                <form class="contact-form glass-card" data-aos="fade-right">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="social-links">
+                        <a href="https://github.com/aahmedadel2006aa-cpu" target="_blank" rel="noopener noreferrer" class="social-link glass-card">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmed-adel-370560375/" target="_blank" rel="noopener noreferrer" class="social-link glass-card">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="social-link glass-card">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="mailto:ahmed@example.com" class="social-link glass-card">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/aahmedadel2006aa-cpu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-adel-370560375/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="footer-copyright">© 2026 Ahmed Adel<br>Full Stack Web Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
